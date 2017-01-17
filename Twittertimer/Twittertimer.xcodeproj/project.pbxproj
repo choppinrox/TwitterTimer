@@ -13,6 +13,8 @@
 		91F4AFEB1E2DD03A0073B92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F4AFE91E2DD03A0073B92F /* Main.storyboard */; };
 		91F4AFED1E2DD03A0073B92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F4AFEC1E2DD03A0073B92F /* Assets.xcassets */; };
 		91F4AFF01E2DD03A0073B92F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F4AFEE1E2DD03A0073B92F /* LaunchScreen.storyboard */; };
+		91F4AFFA1E2DD0FB0073B92F /* DATimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFF91E2DD0FB0073B92F /* DATimer.m */; };
+		91F4AFFC1E2DD2130073B92F /* DATimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F4AFFB1E2DD2130073B92F /* DATimer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		91F4AFEC1E2DD03A0073B92F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F4AFEF1E2DD03A0073B92F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F4AFF11E2DD03A0073B92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F4AFF81E2DD0FB0073B92F /* DATimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DATimer.h; sourceTree = "<group>"; };
+		91F4AFF91E2DD0FB0073B92F /* DATimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DATimer.m; sourceTree = "<group>"; };
+		91F4AFFB1E2DD2130073B92F /* DATimer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DATimer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		91F4AFDF1E2DD03A0073B92F /* Twittertimer */ = {
 			isa = PBXGroup;
 			children = (
+				91F4AFF71E2DD0D50073B92F /* Views */,
 				91F4AFE31E2DD03A0073B92F /* AppDelegate.h */,
 				91F4AFE41E2DD03A0073B92F /* AppDelegate.m */,
 				91F4AFE61E2DD03A0073B92F /* ViewController.h */,
@@ -77,6 +83,16 @@
 				91F4AFE11E2DD03A0073B92F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91F4AFF71E2DD0D50073B92F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91F4AFF81E2DD0FB0073B92F /* DATimer.h */,
+				91F4AFF91E2DD0FB0073B92F /* DATimer.m */,
+				91F4AFFB1E2DD2130073B92F /* DATimer.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +156,7 @@
 			files = (
 				91F4AFF01E2DD03A0073B92F /* LaunchScreen.storyboard in Resources */,
 				91F4AFED1E2DD03A0073B92F /* Assets.xcassets in Resources */,
+				91F4AFFC1E2DD2130073B92F /* DATimer.xib in Resources */,
 				91F4AFEB1E2DD03A0073B92F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +171,7 @@
 				91F4AFE81E2DD03A0073B92F /* ViewController.m in Sources */,
 				91F4AFE51E2DD03A0073B92F /* AppDelegate.m in Sources */,
 				91F4AFE21E2DD03A0073B92F /* main.m in Sources */,
+				91F4AFFA1E2DD0FB0073B92F /* DATimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

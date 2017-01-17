@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DATimer.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet DATimer *timer;
 
 @end
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
