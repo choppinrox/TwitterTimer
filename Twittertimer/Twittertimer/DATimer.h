@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DATimerDelegate <NSObject>
+@optional
+- (void)timerDidComplete;
+
+@end
+
 @interface DATimer : UIView
+
+@property (strong, nonatomic) id <DATimerDelegate> delegate;
 
 @end

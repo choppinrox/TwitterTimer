@@ -85,6 +85,9 @@ NSTimeInterval const interval = 0.01;
     }
     
     if (self.currentTime < endTime) {
+        if ([self.delegate respondsToSelector:@selector(timerDidComplete)]) {
+            [self.delegate timerDidComplete];
+        }
         [self.stop setEnabled:NO];
         [self destroytimer];
     } else {

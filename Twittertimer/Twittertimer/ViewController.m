@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <TwitterKit/TwitterKit.h>
 #import "DATimer.h"
 
-@interface ViewController ()
+@interface ViewController () <DATimerDelegate>
 
 @property (weak, nonatomic) IBOutlet DATimer *timer;
 
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.timer setDelegate:self];
 }
 
 
@@ -28,5 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - DATimerDelegate
+
+- (void)timerDidComplete {
+    [self performSegueWithIdentifier:@"showTweets" sender:self];
+}
 
 @end

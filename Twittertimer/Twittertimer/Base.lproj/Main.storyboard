@@ -37,11 +37,76 @@
                     </view>
                     <connections>
                         <outlet property="timer" destination="3jU-NK-Y29" id="SXc-qp-4pR"/>
+                        <segue destination="10M-pf-I3x" kind="presentation" identifier="showTweets" id="bVJ-EA-jTU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="sIl-XH-ctw">
+            <objects>
+                <tableViewController id="wDk-MF-qe9" customClass="TweetsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hBj-OE-ICN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fDv-Kr-QtX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fDv-Kr-QtX" id="QjO-3j-hBq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wDk-MF-qe9" id="c1u-i7-HNl"/>
+                            <outlet property="delegate" destination="wDk-MF-qe9" id="Bj1-iC-ke1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="gsJ-Ez-zE6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cri-V2-XI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JJc-nx-Kvw">
+            <objects>
+                <navigationController id="10M-pf-I3x" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h6o-kx-srM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wDk-MF-qe9" kind="relationship" relationship="rootViewController" id="nSj-g1-B8F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7o-fu-agf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="45"/>
+        </scene>
+        <!--Tweets View Controller-->
+        <scene sceneID="LVw-Ae-viH">
+            <objects>
+                <viewController id="v2G-Qe-U9R" customClass="TweetsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zt2-Mc-WUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="sd7-g5-ugJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAb-Nf-CBW" customClass="UITableView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3t-Pw-HwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="722"/>
         </scene>
     </scenes>
 </document>

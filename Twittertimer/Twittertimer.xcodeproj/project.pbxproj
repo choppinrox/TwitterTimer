@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C333CE0FFCD0602C2E9AABB /* libPods-Twittertimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDF145B466CA727AFAD894D /* libPods-Twittertimer.a */; };
+		91868D101E2E0AA3006B5B9D /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91868D0F1E2E0AA3006B5B9D /* TweetsViewController.m */; };
 		91F4AFE21E2DD03A0073B92F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE11E2DD03A0073B92F /* main.m */; };
 		91F4AFE51E2DD03A0073B92F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE41E2DD03A0073B92F /* AppDelegate.m */; };
 		91F4AFE81E2DD03A0073B92F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE71E2DD03A0073B92F /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		028CA7D0C25D446ACC23BA42 /* Pods-Twittertimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twittertimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twittertimer/Pods-Twittertimer.release.xcconfig"; sourceTree = "<group>"; };
 		0CA2A2830B72647EFC3F481E /* Pods-Twittertimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twittertimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twittertimer/Pods-Twittertimer.debug.xcconfig"; sourceTree = "<group>"; };
+		91868D0E1E2E0AA3006B5B9D /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		91868D0F1E2E0AA3006B5B9D /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
 		91F4AFDD1E2DD03A0073B92F /* Twittertimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twittertimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F4AFE11E2DD03A0073B92F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91F4AFE31E2DD03A0073B92F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				91F4AFE41E2DD03A0073B92F /* AppDelegate.m */,
 				91F4AFE61E2DD03A0073B92F /* ViewController.h */,
 				91F4AFE71E2DD03A0073B92F /* ViewController.m */,
+				91868D0E1E2E0AA3006B5B9D /* TweetsViewController.h */,
+				91868D0F1E2E0AA3006B5B9D /* TweetsViewController.m */,
 				91F4AFE91E2DD03A0073B92F /* Main.storyboard */,
 				91F4AFEC1E2DD03A0073B92F /* Assets.xcassets */,
 				91F4AFEE1E2DD03A0073B92F /* LaunchScreen.storyboard */,
@@ -132,6 +137,7 @@
 				91F4AFDB1E2DD03A0073B92F /* Resources */,
 				8E4D4A146CA70277432A8BF5 /* [CP] Embed Pods Frameworks */,
 				7253CABCE987FDA7806B7C3E /* [CP] Copy Pods Resources */,
+				91A3FB681E2E051A00BF4184 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,6 +242,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twittertimer/Pods-Twittertimer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		91A3FB681E2E051A00BF4184 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 5b45debbd9a842468c85460dcf06ab907aa0cae9 5983b3c3b6cc1bdaf4dc1c64be96856ac7d8a73999669f1bc678701d9857a848";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -244,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F4AFE81E2DD03A0073B92F /* ViewController.m in Sources */,
+				91868D101E2E0AA3006B5B9D /* TweetsViewController.m in Sources */,
 				91F4AFE51E2DD03A0073B92F /* AppDelegate.m in Sources */,
 				91F4AFE21E2DD03A0073B92F /* main.m in Sources */,
 				91F4AFFA1E2DD0FB0073B92F /* DATimer.m in Sources */,
@@ -407,6 +427,7 @@
 				91F4AFF61E2DD03A0073B92F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
