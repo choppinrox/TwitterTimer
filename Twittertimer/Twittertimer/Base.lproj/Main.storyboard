@@ -21,18 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-NK-Y29" customClass="DATimer">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-ET-Rqf">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="0hP-Mg-LKS"/>
+                                    <constraint firstAttribute="height" constant="128" id="eX4-Rg-b1r"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-NK-Y29" customClass="DATimer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3jU-NK-Y29" secondAttribute="trailing" id="Kdj-HX-B37"/>
-                            <constraint firstItem="3jU-NK-Y29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UeJ-9l-YQv"/>
-                            <constraint firstItem="3jU-NK-Y29" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dUe-qy-srZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3jU-NK-Y29" secondAttribute="trailing" id="2b1-Cl-qq1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3jU-NK-Y29" secondAttribute="bottom" id="6Ak-M2-boa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Hw-ET-Rqf" secondAttribute="bottom" id="6hy-rL-Wye"/>
+                            <constraint firstItem="3jU-NK-Y29" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8hv-LL-Fgz"/>
+                            <constraint firstItem="5Hw-ET-Rqf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ObA-3T-ZJ2"/>
+                            <constraint firstItem="3jU-NK-Y29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TiS-tg-4vj"/>
+                            <constraint firstAttribute="trailing" secondItem="5Hw-ET-Rqf" secondAttribute="trailing" id="yIY-IJ-1iT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -57,7 +66,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fDv-Kr-QtX" id="QjO-3j-hBq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -89,24 +98,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7o-fu-agf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="754" y="45"/>
-        </scene>
-        <!--Tweets View Controller-->
-        <scene sceneID="LVw-Ae-viH">
-            <objects>
-                <viewController id="v2G-Qe-U9R" customClass="TweetsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zt2-Mc-WUS"/>
-                        <viewControllerLayoutGuide type="bottom" id="sd7-g5-ugJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VAb-Nf-CBW" customClass="UITableView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3t-Pw-HwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1151" y="722"/>
         </scene>
     </scenes>
 </document>

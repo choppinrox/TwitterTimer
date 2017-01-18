@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <TwitterKit/TwitterKit.h>
+#import "DAColors.h"
 #import "DATimer.h"
 
 @interface ViewController () <DATimerDelegate>
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.view setBackgroundColor:[DAColors mildBlack]];
     [self.timer setDelegate:self];
 }
 
