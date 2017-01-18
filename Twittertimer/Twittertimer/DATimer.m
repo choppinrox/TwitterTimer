@@ -59,6 +59,9 @@ NSTimeInterval const interval = 0.01;
     if (self.isPaused) {
         self.timeSinceLast = [NSDate date];
     }
+    if ([self.delegate respondsToSelector:@selector(timerDidStart)]) {
+        [self.delegate timerDidStart];
+    }
     self.isPaused = NO;
 }
 
@@ -66,12 +69,18 @@ NSTimeInterval const interval = 0.01;
     if (self.isPaused || self.currentTime <= 0) {
         self.timeSinceLast = [NSDate date];
     }
+    if ([self.delegate respondsToSelector:@selector(timerDidStart)]) {
+        [self.delegate timerDidStart];
+    }
     self.isPaused = NO;
     [self reset];
 }
 
 - (IBAction)stopPressed:(id)sender {
     self.isPaused = YES;
+    if ([self.delegate respondsToSelector:@selector(timerDidStop)]) {
+        [self.delegate timerDidStop];
+    }
 }
 
 #pragma mark - System Actions

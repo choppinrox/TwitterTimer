@@ -11,6 +11,7 @@
 		91868D101E2E0AA3006B5B9D /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91868D0F1E2E0AA3006B5B9D /* TweetsViewController.m */; };
 		91868D131E2F28F5006B5B9D /* DAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 91868D121E2F28F5006B5B9D /* DAButton.m */; };
 		91868D171E2F2DC2006B5B9D /* DAColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 91868D161E2F2DC2006B5B9D /* DAColors.m */; };
+		91CC0AF21E2F513300BB3C35 /* DABackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CC0AF11E2F513300BB3C35 /* DABackgroundEffect.m */; };
 		91F4AFE21E2DD03A0073B92F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE11E2DD03A0073B92F /* main.m */; };
 		91F4AFE51E2DD03A0073B92F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE41E2DD03A0073B92F /* AppDelegate.m */; };
 		91F4AFE81E2DD03A0073B92F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4AFE71E2DD03A0073B92F /* ViewController.m */; };
@@ -30,6 +31,8 @@
 		91868D121E2F28F5006B5B9D /* DAButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAButton.m; sourceTree = "<group>"; };
 		91868D151E2F2DC2006B5B9D /* DAColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAColors.h; sourceTree = "<group>"; };
 		91868D161E2F2DC2006B5B9D /* DAColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAColors.m; sourceTree = "<group>"; };
+		91CC0AF01E2F513300BB3C35 /* DABackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DABackgroundEffect.h; sourceTree = "<group>"; };
+		91CC0AF11E2F513300BB3C35 /* DABackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DABackgroundEffect.m; sourceTree = "<group>"; };
 		91F4AFDD1E2DD03A0073B92F /* Twittertimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twittertimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F4AFE11E2DD03A0073B92F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91F4AFE31E2DD03A0073B92F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				91F4AFFB1E2DD2130073B92F /* DATimer.xib */,
 				91868D111E2F28F5006B5B9D /* DAButton.h */,
 				91868D121E2F28F5006B5B9D /* DAButton.m */,
+				91CC0AF01E2F513300BB3C35 /* DABackgroundEffect.h */,
+				91CC0AF11E2F513300BB3C35 /* DABackgroundEffect.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91868D171E2F2DC2006B5B9D /* DAColors.m in Sources */,
+				91CC0AF21E2F513300BB3C35 /* DABackgroundEffect.m in Sources */,
 				91F4AFE81E2DD03A0073B92F /* ViewController.m in Sources */,
 				91868D101E2E0AA3006B5B9D /* TweetsViewController.m in Sources */,
 				91F4AFE51E2DD03A0073B92F /* AppDelegate.m in Sources */,

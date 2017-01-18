@@ -21,6 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-Va-EqH" customClass="DABackgroundEffect">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-ET-Rqf">
                                 <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,12 +43,17 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3jU-NK-Y29" secondAttribute="bottom" id="6Ak-M2-boa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Hw-ET-Rqf" secondAttribute="bottom" id="6hy-rL-Wye"/>
                             <constraint firstItem="3jU-NK-Y29" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8hv-LL-Fgz"/>
+                            <constraint firstItem="Jyv-Va-EqH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bbd-hV-tSF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jyv-Va-EqH" secondAttribute="bottom" id="FI8-li-IfU"/>
                             <constraint firstItem="5Hw-ET-Rqf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ObA-3T-ZJ2"/>
+                            <constraint firstItem="Jyv-Va-EqH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SFB-af-Otn"/>
                             <constraint firstItem="3jU-NK-Y29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TiS-tg-4vj"/>
+                            <constraint firstAttribute="trailing" secondItem="Jyv-Va-EqH" secondAttribute="trailing" id="iuD-Ps-twt"/>
                             <constraint firstAttribute="trailing" secondItem="5Hw-ET-Rqf" secondAttribute="trailing" id="yIY-IJ-1iT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundEffect" destination="Jyv-Va-EqH" id="mmh-pK-24I"/>
                         <outlet property="timer" destination="3jU-NK-Y29" id="SXc-qp-4pR"/>
                         <segue destination="10M-pf-I3x" kind="presentation" identifier="showTweets" id="bVJ-EA-jTU"/>
                     </connections>

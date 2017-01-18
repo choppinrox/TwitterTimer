@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import <TwitterKit/TwitterKit.h>
+#import "DABackgroundEffect.h"
 #import "DAColors.h"
 #import "DATimer.h"
 
 @interface ViewController () <DATimerDelegate>
 
+@property (strong, nonatomic) IBOutlet DABackgroundEffect *backgroundEffect;
 @property (weak, nonatomic) IBOutlet DATimer *timer;
 
 @end
@@ -34,7 +36,16 @@
 
 #pragma mark - DATimerDelegate
 
+- (void)timerDidStart {
+    [self.backgroundEffect setIsPaused:YES];
+}
+
+- (void)timerDidStop {
+    [self.backgroundEffect setIsPaused:NO];
+}
+
 - (void)timerDidComplete {
+    [self.backgroundEffect setIsPaused:NO];
     [self performSegueWithIdentifier:@"showTweets" sender:self];
 }
 

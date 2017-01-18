@@ -10,6 +10,8 @@
 
 @protocol DATimerDelegate <NSObject>
 @optional
+- (void)timerDidStart;
+- (void)timerDidStop;
 - (void)timerDidComplete;
 
 @end
