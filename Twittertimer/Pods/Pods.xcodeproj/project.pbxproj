@@ -12,22 +12,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D1BCA7DECCCB3AF071D9BC4C42E3DC /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		05C410A0746BAE0E4A603F6CECB50864 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		1375B529FBBD71DD4F517E77A6461C74 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		16818ACD75FA63745FBFF1726AD69209 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		25BEE5C327EF26792F4612BD2FB71FB8 /* libPods-Twittertimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Twittertimer.a"; path = "libPods-Twittertimer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28312186C322A74A61CE43697138CCC6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		3E396D0EFEB42CA7ADD1D1895A2F6E15 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		424E13505CF68B8A2A0F9772483A7A8C /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		434E75B21A599D7652C16F1A06379911 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		5EA81226F6FF3C1A8EB2CBEBBC768371 /* Pods-Twittertimer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Twittertimer-frameworks.sh"; sourceTree = "<group>"; };
 		765A0F54C1FD0BA93030402B411D744C /* Pods-Twittertimer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Twittertimer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81E6CC463930EAA69647F92B24DC70FE /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		8CA2CE8D99B8A30116E350DCC9002600 /* Pods-Twittertimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twittertimer-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99C99A5630D4777A41D316231F7AD04E /* Pods-Twittertimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twittertimer.debug.xcconfig"; sourceTree = "<group>"; };
+		9B99557D89EBAE1FFB716F61317AA5CA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		9C868E829679230B9916A971C1F2F300 /* Pods-Twittertimer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Twittertimer-resources.sh"; sourceTree = "<group>"; };
-		B240D65485509CF7EE0998A8DD37E68D /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		BBCCF59BD8B77C768DD936C8892A471F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		B31FDC72CE127D06AFE28427BA8B46B0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		B6357268E8DE41F768B59BA5F4B37126 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		BD4231063211092CFEF79D9E403EB12F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDF2546D2B10829D7F3C95CA681B4AC0 /* Pods-Twittertimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twittertimer.release.xcconfig"; sourceTree = "<group>"; };
-		DFEB9418A8A8EB2F5863DFCB9B689717 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		E5F844671CFECD95B1DC4725713B13CC /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		DA6173D464E60C808A53FEC9229331D3 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		E6F63F5B347A870A0550DC312F0B4AD4 /* Pods-Twittertimer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Twittertimer-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC87EA7ABD42AC6E8471E11446F546B6 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		FB7CFE81565487F37D4135676C62F6E9 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,20 +50,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17A11F737FAE865798D118450678B032 /* Frameworks */ = {
+		0F650CD82AEA731FE34BABFE5807B799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28312186C322A74A61CE43697138CCC6 /* Fabric.framework */,
+				9B99557D89EBAE1FFB716F61317AA5CA /* Crashlytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4DBD6493E5C509076AE36D8AB0E5A90A /* Resources */ = {
+		444C71894C2E447C8B2842CB13C63C40 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				E5F844671CFECD95B1DC4725713B13CC /* TwitterKitResources.bundle */,
+				1375B529FBBD71DD4F517E77A6461C74 /* ANSCompatibility.h */,
+				04D1BCA7DECCCB3AF071D9BC4C42E3DC /* Answers.h */,
+				B31FDC72CE127D06AFE28427BA8B46B0 /* CLSAttributes.h */,
+				FB7CFE81565487F37D4135676C62F6E9 /* CLSLogging.h */,
+				05C410A0746BAE0E4A603F6CECB50864 /* CLSReport.h */,
+				EC87EA7ABD42AC6E8471E11446F546B6 /* CLSStackFrame.h */,
+				16818ACD75FA63745FBFF1726AD69209 /* Crashlytics.h */,
+				0F650CD82AEA731FE34BABFE5807B799 /* Frameworks */,
 			);
-			name = Resources;
+			name = Crashlytics;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		50D46623750ED47AD663F4E3D81DF8FC /* Products */ = {
@@ -66,10 +82,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6244FE393E8B9DFF3E7790F0DC742EF8 /* Frameworks */ = {
+		50E4D80CAB16FD38045C2FD3B05FB76E /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				BBCCF59BD8B77C768DD936C8892A471F /* TwitterKit.framework */,
+				BC2B763E12BC6F15FB5A5F6B42109ABA /* Frameworks */,
+			);
+			name = TwitterCore;
+			path = TwitterCore;
+			sourceTree = "<group>";
+		};
+		525F1C5D4E7CA64F389AA78F42A4ADB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4231063211092CFEF79D9E403EB12F /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,10 +112,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B22FE4A2A7819BC0489C26EE175D17A5 /* Pods */,
+				B520B0F3B0779B8786DF7EB423436DE5 /* Pods */,
 				50D46623750ED47AD663F4E3D81DF8FC /* Products */,
 				DB3E82205C98E2A0A7BD4AF7CFBB7143 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7FA54B7848DE5B89A0B8C51206A9B879 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				C7ED9D3F7D458EB3F25F2A137B0228B5 /* Frameworks */,
+				B66E36C8F1A6686407CC067EFA7BCF26 /* Resources */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		8EC594A84A40A084B4F86D5A40DC4124 /* Pods-Twittertimer */ = {
@@ -108,52 +143,31 @@
 			path = "Target Support Files/Pods-Twittertimer";
 			sourceTree = "<group>";
 		};
-		903DD9ADE5A783C51AE10D015DAFCBD9 /* TwitterCore */ = {
+		B520B0F3B0779B8786DF7EB423436DE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1A0E5407F061703CD8312BBB914D1EF /* Frameworks */,
-			);
-			name = TwitterCore;
-			path = TwitterCore;
-			sourceTree = "<group>";
-		};
-		9CD88076543926CCFD2E3380C0E13022 /* TwitterKit */ = {
-			isa = PBXGroup;
-			children = (
-				6244FE393E8B9DFF3E7790F0DC742EF8 /* Frameworks */,
-				4DBD6493E5C509076AE36D8AB0E5A90A /* Resources */,
-			);
-			name = TwitterKit;
-			path = TwitterKit;
-			sourceTree = "<group>";
-		};
-		B1A0E5407F061703CD8312BBB914D1EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E396D0EFEB42CA7ADD1D1895A2F6E15 /* TwitterCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B22FE4A2A7819BC0489C26EE175D17A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B3EE012E55D8C78378CC92DBFFD0E03D /* Fabric */,
-				903DD9ADE5A783C51AE10D015DAFCBD9 /* TwitterCore */,
-				9CD88076543926CCFD2E3380C0E13022 /* TwitterKit */,
+				444C71894C2E447C8B2842CB13C63C40 /* Crashlytics */,
+				EB56030CDE2EA2B08D9D10592BC21269 /* Fabric */,
+				50E4D80CAB16FD38045C2FD3B05FB76E /* TwitterCore */,
+				7FA54B7848DE5B89A0B8C51206A9B879 /* TwitterKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B3EE012E55D8C78378CC92DBFFD0E03D /* Fabric */ = {
+		B66E36C8F1A6686407CC067EFA7BCF26 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B240D65485509CF7EE0998A8DD37E68D /* FABAttributes.h */,
-				DFEB9418A8A8EB2F5863DFCB9B689717 /* Fabric.h */,
-				17A11F737FAE865798D118450678B032 /* Frameworks */,
+				B6357268E8DE41F768B59BA5F4B37126 /* TwitterKitResources.bundle */,
 			);
-			name = Fabric;
-			path = Fabric;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC2B763E12BC6F15FB5A5F6B42109ABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				424E13505CF68B8A2A0F9772483A7A8C /* TwitterCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -164,12 +178,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C7ED9D3F7D458EB3F25F2A137B0228B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				434E75B21A599D7652C16F1A06379911 /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB3E82205C98E2A0A7BD4AF7CFBB7143 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				8EC594A84A40A084B4F86D5A40DC4124 /* Pods-Twittertimer */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EB56030CDE2EA2B08D9D10592BC21269 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				DA6173D464E60C808A53FEC9229331D3 /* FABAttributes.h */,
+				81E6CC463930EAA69647F92B24DC70FE /* Fabric.h */,
+				525F1C5D4E7CA64F389AA78F42A4ADB0 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,5 +7,6 @@ target 'Twittertimer' do
 
 pod 'Fabric'
 pod 'TwitterKit'
+pod 'Crashlytics'
 
 end
