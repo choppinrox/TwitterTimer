@@ -21,10 +21,10 @@
     [super awakeFromNib];
     
     self.ring = [CALayer layer];
-    self.ring.frame = CGRectInset(self.bounds, 1.0f, 1.0f);
+    self.ring.frame = CGRectInset(self.bounds, 1.5f, 1.5f);
     [self.ring setBackgroundColor:[UIColor clearColor].CGColor];
     [self.ring setBorderColor:[DAColors mildBlack].CGColor];
-    [self.ring setBorderWidth:1.0f];
+    [self.ring setBorderWidth:1.5f];
     [self.layer addSublayer:self.ring];
 }
 
@@ -35,12 +35,7 @@
     self.layer.cornerRadius = self.frame.size.height / 2.0f;
 }
 
-- (void)setTheme:(DAButtonTheme)theme {
-//    [self.layer setShadowColor:[DAColors burge].CGColor];
-//    [self.layer setShadowOffset:CGSizeMake(2.0f, 2.0f)];
-//    [self.layer setShadowRadius:2.0f];
-//    [self.layer setShadowOpacity:0.2f];
-    
+- (void)setTheme:(DAButtonTheme)theme {    
     [self setTitleColor:[DAColors plastic] forState:UIControlStateNormal];
     switch (theme) {
         case DAButtonThemeOne:

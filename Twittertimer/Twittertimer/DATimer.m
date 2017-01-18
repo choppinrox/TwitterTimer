@@ -114,18 +114,6 @@ NSTimeInterval const interval = 0.01;
         [self.stop setEnabled:NO];
         [self destroytimer];
     } else {
-//        if (!self.isPaused) {
-//            UIView *animate = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:self.secondsM]];
-//            [self.container addSubview:animate];
-//            [animate setTranslatesAutoresizingMaskIntoConstraints:YES];
-//            animate.frame = self.secondsM.frame;
-//            [self animateArc:animate];
-////            [UIView animateWithDuration:0.6f animations:^{
-////                animate.center = CGPointMake(animate.center.x, animate.center.y - 10);
-////            } completion:^(BOOL completion){
-////                [animate removeFromSuperview];
-////            }];
-//        }
         [self applyTime];
     }
 }
@@ -137,51 +125,5 @@ NSTimeInterval const interval = 0.01;
     [self.seconds  setText:[NSString stringWithFormat:@"%02ld", integerPortion]];
     [self.secondsM setText:[NSString stringWithFormat:@"%02ld", decimalPortion]];
 }
-
-//#pragma mark - Animation
-//- (void)animateArc:(UIView *)view {
-//    // Create the arc
-//    CGPoint arcStart = view.center;
-//    CGPoint arcCenter = CGPointMake(view.center.x + 10, view.center.y - 10);
-//    CGFloat arcRadius = 150.0f;
-//    
-//    CGMutablePathRef arcPath = CGPathCreateMutable();
-//    CGPathMoveToPoint(arcPath, NULL, arcStart.x, arcStart.y);
-//    CGPathAddArc(arcPath, NULL, arcCenter.x, arcCenter.y, arcRadius, M_PI, 0, NO);
-//    
-//    [self addSubview:view];
-//    view.center = arcStart;
-//    
-//    // An additional view that shows the arc.
-//    BOOL showArc = NO;
-//    UIView* drawArcView = nil;
-//    if (showArc) {
-//        drawArcView = [[UIView alloc] initWithFrame:self.bounds];
-//        CAShapeLayer* showArcLayer = [[CAShapeLayer alloc] init];
-//        showArcLayer.frame = drawArcView.layer.bounds;
-//        showArcLayer.path = arcPath;
-//        showArcLayer.strokeColor = [[UIColor blackColor] CGColor];
-//        showArcLayer.fillColor = nil;
-//        showArcLayer.lineWidth = 3.0;
-//        [drawArcView.layer addSublayer: showArcLayer];
-//        [self insertSubview: drawArcView belowSubview:view];
-//    }
-//    
-//    // The animation
-//    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-//    pathAnimation.calculationMode = kCAAnimationPaced;
-//    pathAnimation.duration = 5.0;
-//    pathAnimation.path = arcPath;
-//    CGPathRelease(arcPath);
-//    
-//    // Add the animation and reset the state so we can run again.
-//    [CATransaction begin];
-//    [CATransaction setCompletionBlock:^{
-//        [drawArcView removeFromSuperview];
-//        [view removeFromSuperview];
-//    }];
-//    [view.layer addAnimation:pathAnimation forKey:@"arc"];
-//    [CATransaction commit];
-//}
 
 @end
